@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bộ sưu tập — My Three Pages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#maincontent">Chuyển đến Nội dung chính</a>
+  <header class="container header">
+    <img src="logo.svg" alt="MySite logo" width="140" height="56">
+    <nav class="main-nav" role="navigation" aria-label="Chính">
+      <a href="index.html">Trang chính</a>
+      <a href="gallery.html">Bộ sưu tập</a>
+      <a href="about.html">Giới thiệu</a>
+    </nav>
+  </header>
+
+  <main id="maincontent" class="container">
+    <h1>Bộ sưu tập đồ họa</h1>
+    <p>Trang này có ít nhất 5 hình ảnh (dưới dạng SVG tạo sẵn).</p>
+
+    <section class="grid-gallery" aria-label="Gallery grid">
+      <article class="image-card"><img src="img1.svg" alt="Graphic A"></article>
+      <article class="image-card"><img src="img2.svg" alt="Graphic B"></article>
+      <article class="image-card"><img src="img3.svg" alt="Graphic C"></article>
+      <article class="image-card"><img src="img4.svg" alt="Graphic D"></article>
+      <article class="image-card"><img src="img5.svg" alt="Graphic E"></article>
+    </section>
+
+    <section style="margin-top:1rem;">
+      <h2>Ghi chú về CSS đã áp dụng</h2>
+      <ul>
+        <li>Mô hình hộp: tất cả hình ảnh có <code>border</code>, <code>padding</code>, <code>border-radius</code>.</li>
+        <li><code>:hover</code> áp dụng hiệu ứng chuyển đổi (rotate + scale).</li>
+        <li><code>nth-child(even)</code> thay đổi <code>border-radius</code> cho những hình ảnh chẵn.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Trình bày demo — Kiểm tra W3C và WAVE để đảm bảo khả năng truy cập.</p>
+    </div>
+  </footer>
+</body>
+</html>

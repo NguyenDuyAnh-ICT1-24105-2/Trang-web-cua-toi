@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giới thiệu — My Three Pages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#maincontent">Chuyển đến Nội dung chính</a>
+  <header class="container header">
+    <img src="logo.svg" alt="MySite logo" width="140" height="56">
+    <nav class="main-nav" role="navigation" aria-label="Chính">
+      <a href="index.html">Trang chính</a>
+      <a href="gallery.html">Bộ sưu tập</a>
+      <a href="about.html">Giới thiệu</a>
+    </nav>
+  </header>
+
+  <main id="maincontent" class="container">
+    <h1>Giới thiệu</h1>
+    <p>Đây là trang 'Giới thiệu' nơi chúng ta mô tả mục tiêu của trang ví dụ này và cách tiếp cận về khả năng truy cập và thiết kế.</p>
+
+    <section style="display:grid; grid-template-columns:1fr 2fr; gap:1rem; margin-top:1rem;">
+      <div>
+        <h3>Mục tiêu</h3>
+        <p>Tạo 3 trang HTML với các yêu cầu về CSS: position + :focus, grid, flex, hover, nth-child, và box-model cho ảnh.</p>
+      </div>
+      <div>
+        <h3>Hình ảnh minh họa</h3>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <div style="width:140px;" class="image-card"><img src="img2.svg" alt="Graphic B"></div>
+          <div style="width:140px;" class="image-card"><img src="img3.svg" alt="Graphic C"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Để triển khai: lưu các tệp lên GitHub và bật GitHub Pages (branch main hoặc gh-pages).</p>
+    </div>
+  </footer>
+</body>
+</html>

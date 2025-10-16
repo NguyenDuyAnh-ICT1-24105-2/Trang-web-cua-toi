@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trang chính — My Three Pages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#maincontent">Chuyển đến Nội dung chính</a>
+  <header class="container header" role="banner">
+    <img src="logo.svg" alt="MySite logo" width="140" height="56">
+    <nav class="main-nav" role="navigation" aria-label="Chính">
+      <a href="index.html">Trang chính</a>
+      <a href="gallery.html">Bộ sưu tập</a>
+      <a href="about.html">Giới thiệu</a>
+    </nav>
+  </header>
+
+  <main id="maincontent" class="container" role="main">
+    <section class="hero" aria-labelledby="welcome">
+      <div class="h-intro">
+        <h1 id="welcome">Chào mừng đến với trang thử nghiệm của tôi</h1>
+        <p>Đây là một trang ví dụ để chứng minh việc sử dụng <strong>position</strong>, <strong>flex</strong>, <strong>grid</strong>, và các lớp giả như :focus, :hover, nth-child.</p>
+        <p><a href="gallery.html">Xem bộ sưu tập hình ảnh →</a></p>
+      </div>
+      <img src="hero.svg" alt="Hero graphic illustration" style="width:45%; border-radius:12px; border:6px solid #fff; padding:6px;">
+    </section>
+
+    <section aria-labelledby="features" style="margin-top:1.25rem;">
+      <h2 id="features">Một vài tính năng:</h2>
+      <ul>
+        <li>Sử dụng <code>display:flex</code> cho điều hướng.</li>
+        <li>Sử dụng <code>display:grid</code> cho bộ sưu tập.</li>
+        <li>Liên kết 'Chuyển đến Nội dung chính' chỉ hiển thị khi tập trung (focus).</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>Bản quyền © 2025 — Tạo bởi bạn.</p>
+    </div>
+  </footer>
+</body>
+</html>
