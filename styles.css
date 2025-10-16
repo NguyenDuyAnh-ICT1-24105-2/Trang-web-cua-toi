@@ -1,42 +1,41 @@
 
-/* Shared styles */
+
 :root{--accent:#0b7285;--muted:#f3f4f6;--card:#ffffff;}
 *{box-sizing:border-box}
 body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:#fafafa; color:#12232e; line-height:1.4}
 .container{max-width:1100px; margin:2rem auto; padding:1rem;}
 .header{display:flex; align-items:center; justify-content:space-between; gap:1rem;}
 
-/* Skip link - uses position and :focus */
+
 .skip-link{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; background:transparent; color:#fff; padding:0.5rem 1rem; border-radius:6px; z-index:1000}
 .skip-link:focus{position:fixed; left:1rem; top:1rem; width:auto; height:auto; overflow:visible; background:var(--accent); box-shadow:0 4px 12px rgba(2,6,23,0.2)}
 
-/* Navigation - uses flex and at least 3 properties */
+
 nav.main-nav{display:flex; gap:1rem; align-items:center; background:linear-gradient(90deg,#ffffffcc, #f0f7ffcc); padding:0.5rem 1rem; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.06)}
 nav.main-nav a{padding:0.6rem 0.9rem; text-decoration:none; border-radius:8px; font-weight:600; transition:transform .18s ease, box-shadow .18s ease;}
 
-/* hover effect on nav links */
+
 nav.main-nav a:hover{transform:translateY(-3px); box-shadow:0 6px 12px rgba(11,114,133,0.12)}
 
-/* Grid for gallery */
+
 .grid-gallery{display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; align-items:start}
 
-/* make grid responsive */
+
 @media(min-width:800px){ .grid-gallery{grid-template-columns: repeat(3, 1fr);} }
 
-/* Box model for images */
+
 .image-card img{width:100%; display:block; border:6px solid #fff; padding:8px; border-radius:14px; box-shadow:0 6px 18px rgba(2,6,23,0.06)}
 
-/* hover on images - transform (interesting) */
+
 .image-card img:hover{transform:rotate(-3deg) scale(1.03); transition:transform .35s cubic-bezier(.2,.9,.3,1)}
 
-/* nth-child example: every even image gets a different border-radius */
+
 .grid-gallery .image-card:nth-child(even) img{border-radius:40px}
 
-/* Flex example for hero area */
 .hero{display:flex; gap:1rem; align-items:center; padding:1rem; background:linear-gradient(180deg,#ffffff,#f7fbff); border-radius:12px}
 
-/* small utility */
+
 .h-intro{max-width:60%}
 
-/* footer */
+
 footer{margin-top:2rem; text-align:center; color:#61717a; padding:2rem 0}
